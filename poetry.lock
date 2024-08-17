@@ -59,6 +59,17 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "html3"
+version = "1.18"
+description = "simple, elegant HTML, XHTML and XML generation for python3 (based on html)"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "html3-1.18-py3-none-any.whl", hash = "sha256:83756c2af7e63b36e334c7581726ca955d054d7992948dea6abf57ec256c3a60"},
+    {file = "html3-1.18.tar.gz", hash = "sha256:b30e61398e6a7b424b2b0bcd9a3021830b37fdb3b231235b74defec010a4f587"},
+]
+
+[[package]]
 name = "itsdangerous"
 version = "2.2.0"
 description = "Safely pass data to untrusted environments and back."
@@ -175,4 +186,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "0b360b8fbcadc7aaa474e7ce7434d19336fbbfc989060a56758a52bc4b4ab46a"
+content-hash = "91b981d91ad1c67cff88b617a34f0e5a635ca0f86325d1aca5ec2ee75541c236"
