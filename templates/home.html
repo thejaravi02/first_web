@@ -15,12 +15,18 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">Career Growth</h1>
+    <h1 class="text-center mt-2 mb-4"> 
+      career growth by {{company_name}}
+    </h1>
     <img class="img-fluid" id="banner" src='static/felicia-buitenwerf-6CuOUVt87e0-unsplash.jpg' height="320">
     <h2 class="text-center mt-2 mb-4">About Career Growth</h2>
     <p class="lead">Many people face uncertainty when considering software engineering careers. They worry about job security, salary potential, and the need for specific skills. This article will address these concerns by exploring career paths, options, and salaries in software engineering for the current year. We'll provide key statistics, like how software engineers in the U.S. earn an average of $147,524 per year and how the field is expected to grow by 25% from 2022 to 2032. By the end, you'll have a clearer picture of what a career in software engineering can offer and how to pursue it.</p>
-  <h2>job opportunities</h2>
-    <p>show the jobs here</p>
+  <h2 style="text-align:center">job opportunities</h2>
+    <p>
+      {% for job in jobs %}
+        {% include 'jobitems.html' %}
+      {% endfor %}
+    </p>
       <div class="text-center">
     <button class="btn btn-primary btn-lg">>Contact us</button>
     <p class="mt-4">copyrights@2024,career growth</p>
