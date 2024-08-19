@@ -10,17 +10,45 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src='static/luca-bravo-XJXWbfSo2f0-unsplash.jpg' height="320">
     <div class="container">
     <h1 class="text-center mt-2 mb-4"> 
       career growth by {{company_name}}
     </h1>
-    <img class="img-fluid" id="banner" src='static/felicia-buitenwerf-6CuOUVt87e0-unsplash.jpg' height="320">
+    <div class="row" style="margin-bottom:16px;">
+      <div class="col-md-6">
+      
     <h2 class="text-center mt-2 mb-4">About Career Growth</h2>
     <p class="lead">Many people face uncertainty when considering software engineering careers. They worry about job security, salary potential, and the need for specific skills. This article will address these concerns by exploring career paths, options, and salaries in software engineering for the current year. We'll provide key statistics, like how software engineers in the U.S. earn an average of $147,524 per year and how the field is expected to grow by 25% from 2022 to 2032. By the end, you'll have a clearer picture of what a career in software engineering can offer and how to pursue it.</p>
+        
+        <h4>Types of Software Engineers in 2024</h4>  
+        <li>1. Front-End Engineer</li>
+        <li>2. Back-End Engineer</li>
+         <li>3. Full Stack Engineer</li>
+        <li>4. Software Engineer in Test (QA Engineer)</li>
+        <li>5. Software Development Engineer in Test (SDET)</li>
+        <li>6. DevOps Engineer</li>
+        <li>7. Security Engineer</li>
+        <li>8. Data Engineer</li>
+        <li>9. Cloud Architect</li>
+        <li>10. Systems Engineer</li>
+        <li>11. Mobile Engineer</li>
+        <li>12. Technical Support Engineer</li>
+          <li>13. Game Developer</li>
+        
+        </p>
+    </div>
+      <div class="d-none d-md-block col-md-6">
+    <img class="img-fluid" id="banner" src="static/alysha-rosly-xni9Q93xzaE-unsplash.jpg" style=" border-radius:4px;">
+        <img class="img-fluid" id="banner" src="static/felicia-buitenwerf-6CuOUVt87e0-unsplash.jpg" style=" border-radius:4px;">
+
+      </div>
   <h2 style="text-align:center">job opportunities</h2>
     <p>
       {% for job in jobs %}
@@ -28,8 +56,9 @@
       {% endfor %}
     </p>
       <div class="text-center">
-    <button class="btn btn-primary btn-lg">>Contact us</button>
-    <p class="mt-4">copyrights@2024,career growth</p>
+        <a class="btn btn-primary btn-lg" href="mailto:thejaravi02@gmail.com?subject=Questions%20about%20job%20opportunities&body=My%20Name%3A%20%3CYour%20Name%3E%0D%0AMy%20Question%3A%20%3CEnter%20question%20here%3E">>Contact us</a>
       </div>
+    </div>
+  {% include 'footer.html' %}
   </body>
 </html>
